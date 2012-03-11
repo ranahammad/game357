@@ -1,0 +1,38 @@
+//
+//  Line.h
+//  Game_357
+//
+//  Created by Jareer Ahsan on 04/06/09.
+//  Copyright 2009 LUMS. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+
+
+typedef enum {
+	stateUnTouched=0,
+	stateHoverTouched,
+	stateRedTouched,
+	stateBlueTouched,
+	stateRedCutLine,
+	stateBlueCutLine
+} LineState;
+
+//UIInterfaceOrientation
+
+@interface Line : NSObject {
+	NSInteger row;
+	NSInteger col;
+	CGPoint _p1;
+	CGPoint _p2;
+	LineState lineState;
+	
+}
+
+@property (nonatomic) NSInteger row;
+@property (nonatomic) NSInteger col;
+@property (nonatomic) CGPoint _p1;
+@property (nonatomic) CGPoint _p2;
+@property (nonatomic) LineState lineState;
+
+@end

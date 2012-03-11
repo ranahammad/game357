@@ -1,0 +1,174 @@
+//
+//  Game_357ViewController.m
+//  Game_357
+//
+//  Created by Faisal Saeed on 6/11/09.
+//  Copyright __MyCompanyName__ 2009. All rights reserved.
+//
+
+#import "Game_357ViewController.h"
+
+@implementation Game_357ViewController
+
+@synthesize gameView;
+@synthesize imageView;
+@synthesize optionView;
+@synthesize playerOptionView;
+
+/*
+// The designated initializer. Override to perform setup that is required before the view is loaded.
+- (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        // Custom initialization
+    }
+    return self;
+}
+*/
+
+/*
+// Implement loadView to create a view hierarchy programmatically, without using a nib.
+- (void)loadView {
+}
+*/
+
+
+
+// Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
+- (void)viewDidLoad {
+	
+	[super viewDidLoad];
+
+	m_iGameSelected = -1;
+	
+	imageView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"background.jpg"]];
+	[self.view addSubview:imageView];
+	[self.view sendSubviewToBack:imageView];
+	//[self.view sendSubviewToBack:gameView];
+	[imageView  release];
+	
+	gameView = nil;
+}
+
+-(void) viewDidAppear:(BOOL)bAnimated
+{
+	[super viewDidAppear:bAnimated];
+	[self.view addSubview:optionView];
+	[self.view bringSubviewToFront:optionView];
+	
+	if(gameView != nil)
+	{
+		[gameView release];
+		gameView = nil;
+	}
+}
+
+-(void) updateMainViewDelegateMethod:(id) sender
+{
+	[self.view addSubview:optionView];
+	[self.view bringSubviewToFront:optionView];
+	
+	if(gameView != nil)
+	{
+		[gameView release];
+		gameView = nil;
+	}
+}
+
+-(IBAction) Game357BtnClicked
+{
+	[optionView removeFromSuperview];
+//	[self.view  addSubview:playerOptionView];
+//	[self.view bringSubviewToFront:playerOptionView];
+	m_iGameSelected = 3;
+	if(gameView == nil)
+		gameView = [[GameView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];	
+	gameView.updateMainViewDelegate = self;
+	
+	[gameView.gameEngine initialize:3 Columns:m_iGameSelected];
+	
+	[gameView drawGameLines];
+	[gameView drawCutLines];
+	[self.view addSubview:gameView];
+	[self.view bringSubviewToFront:gameView];	
+}
+
+-(IBAction) Game579BtnClicked
+{
+	[optionView removeFromSuperview];
+//	[self.view  addSubview:playerOptionView];
+//	[self.view bringSubviewToFront:playerOptionView];
+	m_iGameSelected = 5;
+	if(gameView == nil)
+		gameView = [[GameView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];	
+	gameView.updateMainViewDelegate = self;
+	
+	[gameView.gameEngine initialize:3 Columns:m_iGameSelected];
+	
+	[gameView drawGameLines];
+	[gameView drawCutLines];
+	[self.view addSubview:gameView];
+	[self.view bringSubviewToFront:gameView];	
+}
+
+-(IBAction) onePlayerBtnClicked
+{
+	[playerOptionView removeFromSuperview];
+	if(gameView == nil)
+		gameView = [[GameView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];	
+	gameView.updateMainViewDelegate = self;
+	
+	[gameView.gameEngine initialize:3 Columns:m_iGameSelected];
+	
+	[gameView drawGameLines];
+	[gameView drawCutLines];
+	[self.view addSubview:gameView];
+	[self.view bringSubviewToFront:gameView];	
+}
+
+-(IBAction) twoPlayerBtnClicked
+{
+	[playerOptionView removeFromSuperview];
+	if(gameView == nil)
+		gameView = [[GameView alloc] initWithFrame:[[UIScreen mainScreen] applicationFrame]];	
+	gameView.updateMainViewDelegate = self;
+	
+	[gameView.gameEngine initialize:3 Columns:m_iGameSelected];
+	
+	[gameView drawGameLines];
+	[gameView drawCutLines];
+	[self.view addSubview:gameView];
+	[self.view bringSubviewToFront:gameView];
+}
+
+
+-(IBAction) infoBtnClicked
+{
+	UIAlertView *pAlert = [[UIAlertView alloc] initWithTitle:@"About Btn Clicked" 
+													 message:@"Any view or information can be shown here !!!" 
+													delegate:nil 
+										   cancelButtonTitle:@"OK" otherButtonTitles:nil];
+	[pAlert show];
+	[pAlert release];
+}
+
+// Override to allow orientations other than the default portrait orientation.
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
+    // Return YES for supported orientations
+    return (interfaceOrientation == UIInterfaceOrientationLandscapeLeft);
+}
+
+
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning]; // Releases the view if it doesn't have a superview
+    // Release anything that's not essential, such as cached data
+}
+
+
+- (void)dealloc 
+{
+	[gameView release];
+    [super dealloc];
+}
+
+@end

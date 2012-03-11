@@ -1,0 +1,248 @@
+// !$*UTF8*$!
+{
+	1D3623250D0F684500981E51 /* Game_357AppDelegate.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {731, 450}}";
+			sepNavSelRange = "{383, 0}";
+			sepNavVisRange = "{154, 336}";
+		};
+	};
+	1D6058900D05DD3D006BFB54 /* Game_357 */ = {
+		activeExec = 0;
+		executables = (
+			56370E4E131A41EC00FDFDFE /* Game_357 */,
+		);
+	};
+	28D7ACF70DDB3853001CB0EB /* Game_357ViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 2640}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1198, 498}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Debug;
+		activeExecutable = 56370E4E131A41EC00FDFDFE /* Game_357 */;
+		activeSDKPreference = iphonesimulator4.2;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* Game_357 */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* Game_357 */,
+		);
+		codeSenseManager = 56370E59131A420F00FDFDFE /* Code sense */;
+		executables = (
+			56370E4E131A41EC00FDFDFE /* Game_357 */,
+		);
+		perUserDictionary = {
+			PBXConfiguration.PBXFileTableDataSource3.PBXFileTableDataSource = {
+				PBXFileTableDataSourceColumnSortingDirectionKey = "-1";
+				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
+				PBXFileTableDataSourceColumnWidthsKey = (
+					20,
+					691,
+					20,
+					48,
+					43,
+					43,
+					20,
+				);
+				PBXFileTableDataSourceColumnsKey = (
+					PBXFileDataSource_FiletypeID,
+					PBXFileDataSource_Filename_ColumnID,
+					PBXFileDataSource_Built_ColumnID,
+					PBXFileDataSource_ObjectSize_ColumnID,
+					PBXFileDataSource_Errors_ColumnID,
+					PBXFileDataSource_Warnings_ColumnID,
+					PBXFileDataSource_Target_ColumnID,
+				);
+			};
+			PBXPerProjectTemplateStateSaveDate = 353175287;
+			PBXWorkspaceStateSaveDate = 353175287;
+		};
+		perUserProjectItems = {
+			5606A794150D079700088E78 /* PBXTextBookmark */ = 5606A794150D079700088E78 /* PBXTextBookmark */;
+			5606A795150D079700088E78 /* PBXTextBookmark */ = 5606A795150D079700088E78 /* PBXTextBookmark */;
+			5606A796150D079700088E78 /* PlistBookmark */ = 5606A796150D079700088E78 /* PlistBookmark */;
+			5606A797150D079700088E78 /* PBXBookmark */ = 5606A797150D079700088E78 /* PBXBookmark */;
+			5606A798150D079700088E78 /* PBXBookmark */ = 5606A798150D079700088E78 /* PBXBookmark */;
+			5606A799150D079700088E78 /* PBXBookmark */ = 5606A799150D079700088E78 /* PBXBookmark */;
+			56370E5A131A4AF000FDFDFE /* PBXTextBookmark */ = 56370E5A131A4AF000FDFDFE /* PBXTextBookmark */;
+			56370E5B131A4AF000FDFDFE /* PBXTextBookmark */ = 56370E5B131A4AF000FDFDFE /* PBXTextBookmark */;
+			56370E5C131A4AF000FDFDFE /* PBXTextBookmark */ = 56370E5C131A4AF000FDFDFE /* PBXTextBookmark */;
+			56370E5E131A4AF000FDFDFE /* PBXTextBookmark */ = 56370E5E131A4AF000FDFDFE /* PBXTextBookmark */;
+			56370E5F131A4AF000FDFDFE /* PBXTextBookmark */ = 56370E5F131A4AF000FDFDFE /* PBXTextBookmark */;
+		};
+		sourceControlManager = 56370E58131A420F00FDFDFE /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3E6A83180FE10BC700B644BA /* GameEngine.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 4545}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 492}";
+		};
+	};
+	3E6A83190FE10BC700B644BA /* GameView.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 675}}";
+			sepNavSelRange = "{425, 0}";
+			sepNavVisRange = "{193, 645}";
+		};
+	};
+	3E6A831A0FE10BC700B644BA /* GameView.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1396, 3855}}";
+			sepNavSelRange = "{2003, 0}";
+			sepNavVisRange = "{1713, 855}";
+		};
+	};
+	3E6A831B0FE10BC700B644BA /* Line.h */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 660}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{0, 445}";
+		};
+	};
+	3E6A831C0FE10BC700B644BA /* Line.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {1011, 1455}}";
+			sepNavSelRange = "{0, 0}";
+			sepNavVisRange = "{1289, 579}";
+		};
+	};
+	5606A794150D079700088E78 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3E6A831A0FE10BC700B644BA /* GameView.m */;
+		name = "GameView.m: 55";
+		rLen = 0;
+		rLoc = 2003;
+		rType = 0;
+		vrLen = 855;
+		vrLoc = 1713;
+	};
+	5606A795150D079700088E78 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 1D3623250D0F684500981E51 /* Game_357AppDelegate.m */;
+		name = "Game_357AppDelegate.m: 19";
+		rLen = 0;
+		rLoc = 383;
+		rType = 0;
+		vrLen = 475;
+		vrLoc = 151;
+	};
+	5606A796150D079700088E78 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 8D1107310486CEB800E47090 /* Info.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/ranahammad/RanaHammad/Development/GitHub/game357/Info.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	5606A797150D079700088E78 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 5606A776150D070F00088E78 /* bluechalk.png */;
+	};
+	5606A798150D079700088E78 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 5606A775150D070F00088E78 /* background.jpg */;
+	};
+	5606A799150D079700088E78 /* PBXBookmark */ = {
+		isa = PBXBookmark;
+		fRef = 5606A775150D070F00088E78 /* background.jpg */;
+	};
+	56370E4E131A41EC00FDFDFE /* Game_357 */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		dataTipCustomDataFormattersEnabled = 1;
+		dataTipShowTypeColumn = 1;
+		dataTipSortType = 0;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = Game_357;
+		showTypeColumn = 0;
+		sourceDirectories = (
+		);
+	};
+	56370E58131A420F00FDFDFE /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+			repositoryNamesForRoots = {
+				"" = "";
+			};
+		};
+	};
+	56370E59131A420F00FDFDFE /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+	56370E5A131A4AF000FDFDFE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3E6A83180FE10BC700B644BA /* GameEngine.m */;
+		name = "GameEngine.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 492;
+		vrLoc = 0;
+	};
+	56370E5B131A4AF000FDFDFE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3E6A831C0FE10BC700B644BA /* Line.m */;
+		name = "Line.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 579;
+		vrLoc = 1289;
+	};
+	56370E5C131A4AF000FDFDFE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3E6A831B0FE10BC700B644BA /* Line.h */;
+		name = "Line.h: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 445;
+		vrLoc = 0;
+	};
+	56370E5E131A4AF000FDFDFE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* Game_357ViewController.m */;
+		name = "Game_357ViewController.m: 1";
+		rLen = 0;
+		rLoc = 0;
+		rType = 0;
+		vrLen = 498;
+		vrLoc = 1198;
+	};
+	56370E5F131A4AF000FDFDFE /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 3E6A83190FE10BC700B644BA /* GameView.h */;
+		name = "GameView.h: 24";
+		rLen = 0;
+		rLoc = 425;
+		rType = 0;
+		vrLen = 645;
+		vrLoc = 193;
+	};
+}

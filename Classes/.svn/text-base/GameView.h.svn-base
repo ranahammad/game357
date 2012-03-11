@@ -1,0 +1,44 @@
+//
+//  GameView.h
+//  Game_357
+//
+//  Created by Jareer Ahsan on 28/05/09.
+//  Copyright 2009 LUMS. All rights reserved.
+//
+
+#import <UIKit/UIKit.h>
+#import "GameEngine.h"
+
+@class GameEngine;
+
+@interface GameView : UIView 
+{
+	CGContextRef _gameContext;
+	CGLayerRef _gameBaseLayer;
+	CGLayerRef _gameCutLayer;
+	CGLayerRef _gameTempLayer;
+
+	id updateMainViewDelegate;
+	
+	GameEngine *gameEngine;
+	NSInteger _x1, _y1, _x2, _y2;
+	UIImageView *greenChalkView;
+	UIImageView *blueChalkView;
+	UIImage *greenChalk;
+	UIImage *blueChalk;
+	UIImage *redChalk;
+	
+	//NSInteger startingColumns;
+}
+
+@property (nonatomic, retain) id updateMainViewDelegate;
+@property (nonatomic, retain) GameEngine *gameEngine;
+@property (nonatomic) NSInteger _x1, _y1, _x2, _y2;
+//@property (nonatomic) NSInteger startingColumns;
+
+- (void)drawGameLines;
+- (void)drawCutLines;
+
+-(void) updateMainViewDelegateMethod:(id) sender;
+
+@end
